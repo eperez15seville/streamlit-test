@@ -48,10 +48,8 @@ st.subheader('Otros gráficos')
 fig = px.pie(wine_quality.data.original, names='color', title='Distribución de Colores de Vino')
 st.plotly_chart(fig)
 
-# Mapa de calor de correlaciones
 import plotly.graph_objects as go
 
-# Calcular matriz de correlación
 correlacion = X.select_dtypes(include=['float64', 'int64']).corr()
 
 fig = go.Figure(data=go.Heatmap(
