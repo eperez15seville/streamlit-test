@@ -66,3 +66,12 @@ fig.update_layout(title='Matriz de Correlación',
                   yaxis_title='Variables')
 
 st.plotly_chart(fig)
+
+st.subheader('Mapa')
+
+sevilla_map_data = pd.DataFrame({
+    'lat': [37.3604728],
+    'lon': [-5.9914384]
+})
+
+st.map(sevilla_map_data, zoom=16)
