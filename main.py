@@ -6,7 +6,7 @@ import random
 
 st.write('Mi primera aplicación!')
 
-st.subheader('Carga de datos')
+st.subheader('Carga de datos hola')
 
 from ucimlrepo import fetch_ucirepo 
 
